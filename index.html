@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html>
+
+
+<body>
+<form name="search">
+  <label>Search the site:
+    <input type="text" name="search">
+  </label>
+  <input type="submit" value="Search!">
+</form>
+
+<hr>
+
+<form name="search-person">
+  Search the visitors:
+  <table id="age-table">
+    <tr>
+      <td>Age:</td>
+      <td id="age-list">
+        <label>
+          <input type="radio" name="age" value="young">less than 18</label>
+        <label>
+          <input type="radio" name="age" value="mature">18-50</label>
+        <label>
+          <input type="radio" name="age" value="senior">more than 50</label>
+      </td>
+    </tr>
+
+    <tr>
+      <td>Additionally:</td>
+      <td>
+        <input type="text" name="info[0]">
+        <input type="text" name="info[1]">
+        <input type="text" name="info[2]">
+      </td>
+    </tr>
+
+  </table>
+
+  <input type="submit" value="Search!">
+</form>
+
+<script>
+//1
+let table = document.getElementById('age-table');
+
+//2
+table.getElementsByTagName('label');
+
+//or
+document.querySelectorAll('#age-table labe');
+console.log(table);
+//3 with word "age"
+table.rows[0].cells[0];
+//or
+table.querySelector('tb');
+
+// 4 .the form with the name "search"; anly one element name="search";
+
+let form=document.getElementsByName('search')[0];
+//or, from specificaly
+document.querySelector('from[name="search"]');
+
+//5 the first input in that form
+form.getElementsByTagName('input')[0];
+// or 
+form.querySelector('input');
+
+//6 the las input in the form
+
+let inputs = form.querySelectorAll('input')//search all
+
+inputs[inputs.length-1] //take last
+
+
+</script>
+</body>
+</html>
