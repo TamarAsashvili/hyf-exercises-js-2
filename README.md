@@ -1,2 +1,2 @@
 # hyf-exercises-js-2
-I   Love   :coffee:   :pizza:   and :dancer: !
+I  :heart: Love   :coffee:   :pizza:   and :dancer: !
